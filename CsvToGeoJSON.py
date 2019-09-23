@@ -2,7 +2,6 @@ import csv
 
 # Read tornado data from csv
 tornadoData = csv.reader(open('2017_torn.csv', 'r'))
-outputFile = "tornados.geojson"
 
 # Create a template that will format the CSV data into GeoJSON
 template = \
@@ -43,6 +42,7 @@ output += \
    '''
 
 # Creates the output file and writes the formatted GeoJSON to it
+outputFile = "tornados.geojson"
 outFileHandle = open(outputFile, "w")
 outFileHandle.write(output)
 outFileHandle.close()
