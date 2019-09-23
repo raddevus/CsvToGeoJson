@@ -10,7 +10,7 @@ template = \
        "geometry" : {
            "type" : "Point",
            "coordinates" : [%s, %s]},
-       "properties" : { "date" : %s, "len" : "%s", "wid" : "%s"}
+       "properties" : { "date" : "%s", "len" : "%s", "wid" : "%s"}
        },
    '''
 
